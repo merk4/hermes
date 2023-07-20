@@ -126,7 +126,22 @@ h6 {
 .page-header .cta-btn:hover {
   background: #808080;
 }
+@media screen and (max-width: 767px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999; /* Adjust the z-index as needed to ensure the header is above other elements */
+  }
 
+  .header-image {
+    /* No changes needed for header image */
+  }
+
+  main#main {
+    /* Add margin to the top of the main section to create space for the header */
+    /* margin-top: 150px;  */
+  }
+}
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
